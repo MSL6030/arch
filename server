@@ -1,2 +1,2 @@
 #!/bin/bash
-pacman -S sshd
+sudo pacman -S sshd
