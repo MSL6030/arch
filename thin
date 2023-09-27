@@ -1,1 +1,3 @@
-curl -SL https://raw.githubusercontent.com/msl6030/arch/thin.st.sh -o st.sh
+curl -SL https://raw.githubusercontent.com/msl6030/arch/main/thin.st.sh -o ~/st.sh
+mkdir ~/.config/autostart
+curl -SL https://raw.githubusercontent.com/msl6030/arch/main/thin.vmw.desktop -o ~/.config/autostart/vmw.desktop
