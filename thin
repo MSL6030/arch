@@ -1,3 +1,6 @@
-curl https://raw.githubusercontent.com/msl6030/arch/main/thin.st.sh > ~/st.sh
-mkdir ~/.config/autostart
-curl https://raw.githubusercontent.com/msl6030/arch/main/thin.vmw.desktop > ~/.config/autostart/vmw.desktop
+sudo curl https://raw.githubusercontent.com/msl6030/arch/main/thin.st.sh > /home/user1/st.sh
+sudo chown user1:user1 /home/user1/st.sh
+sudo mkdir /home/user1/.config/autostart
+sudo chown user1:user1 /home/user1/.config/autostart
+sudo curl https://raw.githubusercontent.com/msl6030/arch/main/thin.vmw.desktop > /home/user1/.config/autostart/vmw.desktop
+sudo chown user1:user1 /home/user1/.config/autostart/vmw.desktop
