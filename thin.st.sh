@@ -21,6 +21,7 @@ do
      		3)
       			shut=1
 	 		echo Пока!
+    			shitdown now
 		;;
  		*)
   			echo Нет такого меню
