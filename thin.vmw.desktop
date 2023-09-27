@@ -2,7 +2,7 @@
 Version = 1.0
 Name=term
 Comment=comme
-Exec=/usr/bin/xfce4-terminal --fullscreen --hide-menubar --hide-borders --hide-scrollbar --hide-toolbar --command="bash ~/st.sh"
+Exec=/usr/bin/xfce4-terminal --fullscreen --hide-menubar --hide-borders --hide-scrollbar --hide-toolbar --command="bash /home/user1/st.sh"
 Terminal=false
 Type=Application
 Hidden=false
