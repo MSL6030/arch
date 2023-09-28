@@ -1,4 +1,5 @@
 #!/bin/bash
+setfont cyr-sun16
 vmware-view --serverURL=x315.krost.net --fullscreen --singleAutoConnect --nomenubar --once
 shut=0
 while shut==0
