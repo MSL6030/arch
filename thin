@@ -1,3 +1,6 @@
+sudo pacman -S xfce4-desktop xfce4-session xfce4-terminal
+sudo pacman -S xorg lightdm 
+sudo systemctl enable lightdm
 sudo sed -i '/#autologin-user=/c\autologin-user=user1' /etc/lightdm/lightdm.conf
 sudo groupadd -r autologin
 sudo gpasswd -a user1 autologin
