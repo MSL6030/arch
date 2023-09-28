@@ -4,6 +4,7 @@ sudo systemctl enable lightdm
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si --noconfirm
+yay -S --noconfirm vmware-horizon-rtav
 sudo sed -i '/#autologin-user=/c\autologin-user=user1' /etc/lightdm/lightdm.conf
 sudo useradd --create-home user1
 sudo groupadd -r autologin
