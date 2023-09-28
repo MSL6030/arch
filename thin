@@ -1,4 +1,4 @@
-sudo pacman -Sy xfce4-session xfce4-terminal lightdm 
+sudo pacman -S --noconfirm xfce4-session xfce4-terminal lightdm 
 sudo systemctl enable lightdm
 sudo sed -i '/#autologin-user=/c\autologin-user=user1' /etc/lightdm/lightdm.conf
 sudo useradd --create-home user1
