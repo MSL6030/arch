@@ -1,5 +1,4 @@
-sudo pacman -S --noconfirm xfce4-session xfdesktop xfce4-terminal lightdm git pulseaudio
-sudo pacman -S --noconfirm lightdm-gtk-greeter
+sudo pacman -S --noconfirm xfce4-session xfdesktop xfce4-terminal lightdm git pulseaudio lightdm-gtk-greeter
 sudo systemctl enable lightdm
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
