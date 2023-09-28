@@ -22,7 +22,7 @@ do
      		3)
       			shut=1
 	 		echo Пока!
-    			shitdown now
+    			shutdown now
 		;;
  		*)
   			echo Нет такого пункта меню
