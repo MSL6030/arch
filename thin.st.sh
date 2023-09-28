@@ -25,7 +25,7 @@ do
 		;;
  		*)
   			echo Нет такого меню
-    			sleep 3
+    			sleep 2
       		;;
 	esac
 done
