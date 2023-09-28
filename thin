@@ -9,7 +9,7 @@ sudo groupadd -r autologin
 #sudo gpasswd -a user1 autologin
 sudo gpasswd -a qwe autologin
 #sudo sed -i '/#autologin-user=/c\autologin-user=user1' /etc/lightdm/lightdm.conf
-sudo sed -i '/#autologin-user=/c\autologin-user=qwe' /etc/lightdm/lightdm.conf
+#sudo sed -i '/#autologin-user=/c\autologin-user=qwe' /etc/lightdm/lightdm.conf
 #sudo curl https://raw.githubusercontent.com/msl6030/arch/main/thin.st.sh -o /home/user1/st.sh
 sudo curl https://raw.githubusercontent.com/msl6030/arch/main/thin.st.sh -o /home/qwe/st.sh
 #sudo chown user1:root /home/user1/st.sh
@@ -17,6 +17,6 @@ sudo curl https://raw.githubusercontent.com/msl6030/arch/main/thin.st.sh -o /hom
 #sudo chown user1:root /home/user1/.config
 #sudo mkdir /home/user1/.config/autostart
 #sudo chown user1:root /home/user1/.config/autostart
-sudo curl https://raw.githubusercontent.com/msl6030/arch/main/thin.vmw.desktop -o /home/user1/.config/autostart/vmw.desktop
+#sudo curl https://raw.githubusercontent.com/msl6030/arch/main/thin.vmw.desktop -o /home/user1/.config/autostart/vmw.desktop
 #sudo chown user1:root /home/user1/.config/autostart/vmw.desktop
 #sudo fm -rf /etc/sudoers.d/00_qwe
