@@ -1,3 +1,4 @@
+userr='qwe'
 sudo pacman -S --noconfirm xfce4-session xfce4-terminal lightdm git pulseaudio lightdm-gtk-greeter xfwm4 xfdesktop
 sudo systemctl enable lightdm
 git clone https://aur.archlinux.org/yay-bin.git
@@ -11,12 +12,14 @@ sudo gpasswd -a qwe autologin
 #sudo sed -i '/#autologin-user=/c\autologin-user=user1' /etc/lightdm/lightdm.conf
 #sudo sed -i '/#autologin-user=/c\autologin-user=qwe' /etc/lightdm/lightdm.conf
 #sudo curl https://raw.githubusercontent.com/msl6030/arch/main/thin.st.sh -o /home/user1/st.sh
-sudo curl https://raw.githubusercontent.com/msl6030/arch/main/thin.st.sh -o /home/qwe/st.sh
+curl https://raw.githubusercontent.com/msl6030/arch/main/thin.st.sh -o /home/$userr/st.sh
 #sudo chown user1:root /home/user1/st.sh
 #sudo mkdir /home/user1/.config
 #sudo chown user1:root /home/user1/.config
 #sudo mkdir /home/user1/.config/autostart
+mkdir /home/$userr/.config/autostart
 #sudo chown user1:root /home/user1/.config/autostart
 #sudo curl https://raw.githubusercontent.com/msl6030/arch/main/thin.vmw.desktop -o /home/user1/.config/autostart/vmw.desktop
+curl https://raw.githubusercontent.com/msl6030/arch/main/thin.vmw.desktop -o /home/$userr/.config/autostart/vmw.desktop
 #sudo chown user1:root /home/user1/.config/autostart/vmw.desktop
 #sudo fm -rf /etc/sudoers.d/00_qwe
