@@ -2,8 +2,8 @@ sudo sed -i '/#autologin-user=/c\autologin-user=user1' /etc/lightdm/lightdm.conf
 sudo groupadd -r autologin
 sudo gpasswd -a user1 autologin
 sudo curl https://raw.githubusercontent.com/msl6030/arch/main/thin.st.sh > /home/user1/st.sh
-sudo chown user1:user1 /home/user1/st.sh
+sudo chown user1:root /home/user1/st.sh
 sudo mkdir /home/user1/.config/autostart
-sudo chown user1:user1 /home/user1/.config/autostart
+sudo chown user1:root /home/user1/.config/autostart
 sudo curl https://raw.githubusercontent.com/msl6030/arch/main/thin.vmw.desktop > /home/user1/.config/autostart/vmw.desktop
-sudo chown user1:user1 /home/user1/.config/autostart/vmw.desktop
+sudo chown user1:root /home/user1/.config/autostart/vmw.desktop
