@@ -24,7 +24,7 @@ do
     			shitdown now
 		;;
  		*)
-  			echo Нет такого меню
+  			echo Нет такого пункта меню
     			sleep 2
       		;;
 	esac
