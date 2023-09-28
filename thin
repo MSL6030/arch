@@ -1,7 +1,7 @@
-sudo useradd --create-home user1
-sudo pacman -S xfce4-desktop xfce4-session xfce4-terminal lightdm 
+sudo pacman -S xfce4-session xfce4-terminal lightdm 
 sudo systemctl enable lightdm
 sudo sed -i '/#autologin-user=/c\autologin-user=user1' /etc/lightdm/lightdm.conf
+sudo useradd --create-home user1
 sudo groupadd -r autologin
 sudo gpasswd -a user1 autologin
 sudo curl https://raw.githubusercontent.com/msl6030/arch/main/thin.st.sh > /home/user1/st.sh
