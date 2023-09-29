@@ -1,6 +1,7 @@
 setfont cyr-sun16
 userr='qwe'
-sudo pacman -S --noconfirm xfce4-session xfce4-terminal lightdm git pipewire-pulse lightdm-gtk-greeter xfwm4 xfdesktop
+#sudo pacman -S --noconfirm xfce4-session xfce4-terminal lightdm git pipewire-pulse lightdm-gtk-greeter xfwm4 xfdesktop
+sudo pacman -S --noconfirm xfce4-session xfce4-terminal lightdm git pipewire-pulse lightdm-gtk-greeter xfwm4
 sudo systemctl enable lightdm
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
@@ -16,6 +17,6 @@ xfconf-query --channel xfce4-terminal --property /misc-right-click-action --set 
 xfconf-query --channel xfce4-terminal --property /misc-mouse-autohide --set true
 xfconf-query --channel xfce4-terminal --property /shortcuts-no-menukey --set true
 xfconf-query --channel xfce4-terminal --property /shortcuts-no-mnemonics --set true
-#curl https://raw.githubusercontent.com/msl6030/arch/main/thin.vmw.desktop -o /home/$userr/.config/autostart/vmw.desktop
+curl https://raw.githubusercontent.com/msl6030/arch/main/thin.vmw.desktop -o /home/$userr/.config/autostart/vmw.desktop
 #sudo fm -rf /etc/sudoers.d/00_qwe
 #reboot
