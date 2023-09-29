@@ -13,10 +13,10 @@ sudo sed -i "/#autologin-user=/c\autologin-user=$userr" /etc/lightdm/lightdm.con
 sudo sed -i "/#autologin-session=/c\autologin-session=xfce" /etc/lightdm/lightdm.conf
 curl https://raw.githubusercontent.com/msl6030/arch/main/thin.st.sh -o /home/$userr/st.sh
 mkdir /home/$userr/.config/autostart
-xfconf-query --channel xfce4-terminal --property /misc-right-click-action --set TERMINAL_RIGHT_CLICK_ACTION_PASTE_CLIPBOARD
-xfconf-query --channel xfce4-terminal --property /misc-mouse-autohide --set true
-xfconf-query --channel xfce4-terminal --property /shortcuts-no-menukey --set true
-xfconf-query --channel xfce4-terminal --property /shortcuts-no-mnemonics --set true
+#xfconf-query --channel xfce4-terminal --property /misc-right-click-action --set TERMINAL_RIGHT_CLICK_ACTION_PASTE_CLIPBOARD
+#xfconf-query --channel xfce4-terminal --property /misc-mouse-autohide --set true
+#xfconf-query --channel xfce4-terminal --property /shortcuts-no-menukey --set true
+#xfconf-query --channel xfce4-terminal --property /shortcuts-no-mnemonics --set true
 curl https://raw.githubusercontent.com/msl6030/arch/main/thin.vmw.desktop -o /home/$userr/.config/autostart/vmw.desktop
 #sudo fm -rf /etc/sudoers.d/00_qwe
 #reboot
