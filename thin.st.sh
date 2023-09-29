@@ -1,9 +1,9 @@
 #!/bin/bash
 setfont cyr-sun16
-xfconf-query --channel xfce4-terminal --property /misc-right-click-action --set TERMINAL_RIGHT_CLICK_ACTION_PASTE_CLIPBOARD
-xfconf-query --channel xfce4-terminal --property /misc-mouse-autohide --set true
-xfconf-query --channel xfce4-terminal --property /shortcuts-no-menukey --set true
-xfconf-query --channel xfce4-terminal --property /shortcuts-no-mnemonics --set true
+xfconf-query --channel xfce4-terminal --property /misc-right-click-action --create --type string --set TERMINAL_RIGHT_CLICK_ACTION_PASTE_CLIPBOARD
+xfconf-query --channel xfce4-terminal --property /misc-mouse-autohide --create --type string --set true
+xfconf-query --channel xfce4-terminal --property /shortcuts-no-menukey --create --type string --set true
+xfconf-query --channel xfce4-terminal --property /shortcuts-no-mnemonics --create --type string --set true
 vmware-view --serverURL=x315.krost.net --fullscreen --singleAutoConnect --nomenubar --once
 shut=0
 while shut==0
