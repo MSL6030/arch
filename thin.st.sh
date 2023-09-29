@@ -7,7 +7,7 @@ do
 	clear
 	echo Меню:
 	echo 1 - Подключиться заново
-	echo 2 - Тестировать сеть
+	echo 2 - Тестировать интернет
 	echo 3 - Выключить компьютер
 	read -p 'Введите номер: ' result
 	case $result in
