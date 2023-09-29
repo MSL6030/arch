@@ -12,7 +12,7 @@ sudo groupadd -r autologin
 #sudo gpasswd -a user1 autologin
 sudo gpasswd -a $userr autologin
 #sudo sed -i '/#autologin-user=/c\autologin-user=user1' /etc/lightdm/lightdm.conf
-sudo sed -i '/#autologin-user=/c\autologin-user=$userr' /etc/lightdm/lightdm.conf
+sudo sed -i "/#autologin-user=/c\autologin-user=$userr" /etc/lightdm/lightdm.conf
 #sudo curl https://raw.githubusercontent.com/msl6030/arch/main/thin.st.sh -o /home/user1/st.sh
 curl https://raw.githubusercontent.com/msl6030/arch/main/thin.st.sh -o /home/$userr/st.sh
 #sudo chown user1:root /home/user1/st.sh
