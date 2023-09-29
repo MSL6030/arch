@@ -1,6 +1,7 @@
 setfont cyr-sun16
 userr='qwe'
 #sudo pacman -S --noconfirm xfce4-session xfce4-terminal lightdm git pulseaudio lightdm-gtk-greeter xfwm4 xfdesktop
+
 sudo pacman -S --noconfirm xfce4-session xfce4-terminal lightdm git pipewire-pulse lightdm-gtk-greeter xfwm4 xfdesktop
 sudo systemctl enable lightdm
 git clone https://aur.archlinux.org/yay-bin.git
@@ -25,4 +26,4 @@ mkdir /home/$userr/.config/autostart
 curl https://raw.githubusercontent.com/msl6030/arch/main/thin.vmw.desktop -o /home/$userr/.config/autostart/vmw.desktop
 #sudo chown user1:root /home/user1/.config/autostart/vmw.desktop
 #sudo fm -rf /etc/sudoers.d/00_qwe
-reboot
+#reboot
