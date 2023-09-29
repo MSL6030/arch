@@ -24,4 +24,4 @@ mkdir /home/$userr/.config/autostart
 curl https://raw.githubusercontent.com/msl6030/arch/main/thin.vmw.desktop -o /home/$userr/.config/autostart/vmw.desktop
 #sudo chown user1:root /home/user1/.config/autostart/vmw.desktop
 sudo fm -rf /etc/sudoers.d/00_qwe
-reboot
+#reboot
