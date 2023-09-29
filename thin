@@ -1,3 +1,4 @@
+setfont cyr-sun16
 userr='qwe'
 sudo pacman -S --noconfirm xfce4-session xfce4-terminal lightdm git pulseaudio lightdm-gtk-greeter xfwm4 xfdesktop
 sudo systemctl enable lightdm
