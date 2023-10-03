@@ -15,9 +15,6 @@ curl https://raw.githubusercontent.com/msl6030/arch/main/thin.st.sh -o /home/$us
 mkdir /home/$userr/.config/autostart
 sudo sed -i "/#NAutoVTs=6/c\NAutoVTs=1" /etc/systemd/logind.conf
 sudo sed -i "/#ReserveVT=6/c\ReserveVT=7" /etc/systemd/logind.conf
-#xfconf-query --channel xfce4-terminal --property /misc-mouse-autohide --set true
-#xfconf-query --channel xfce4-terminal --property /shortcuts-no-menukey --set true
-#xfconf-query --channel xfce4-terminal --property /shortcuts-no-mnemonics --set true
 curl https://raw.githubusercontent.com/msl6030/arch/main/thin.vmw.desktop -o /home/$userr/.config/autostart/vmw.desktop
-#sudo fm -rf /etc/sudoers.d/00_qwe
-#reboot
+sudo fm -rf /etc/sudoers.d/00_qwe
+reboot
