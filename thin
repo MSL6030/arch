@@ -12,6 +12,7 @@ sudo gpasswd -a $userr autologin
 sudo sed -i "/#autologin-user=/c\autologin-user=$userr" /etc/lightdm/lightdm.conf
 sudo sed -i "/#autologin-session=/c\autologin-session=xfce" /etc/lightdm/lightdm.conf
 curl https://raw.githubusercontent.com/msl6030/arch/main/thin.st.sh -o /home/$userr/st.sh
+curl https://raw.githubusercontent.com/msl6030/arch/main/thin.shut.sh -o /home/$userr/shut.sh
 mkdir /home/$userr/.config/autostart
 sudo sed -i "/#NAutoVTs=6/c\NAutoVTs=1" /etc/systemd/logind.conf
 sudo sed -i "/#ReserveVT=6/c\ReserveVT=7" /etc/systemd/logind.conf
