@@ -1,8 +1,8 @@
 #!/bin/bash
 sudo pacman -S openssh ufw
 sudo systemctl enable sshd
-mkdir /home/groa/.ssh
-curl https://raw.githubusercontent.com/msl6030/arch/main/authorized_keys -o /home/groa/.ssh/authorized_keys
+mkdir ~/.ssh
+curl https://raw.githubusercontent.com/msl6030/arch/main/authorized_keys -o ~/.ssh/authorized_keys
 sudo sed -i "/#UsePAM no/c\UsePAM no" /etc/ssh/sshd_config
 sudo sed -i "/#PermitRootLogin prohibit-password/c\PermitRootLogin no" /etc/ssh/sshd_config
 sudo sed -i "/#PasswordAuthentication yes/c\PasswordAuthentication no" /etc/ssh/sshd_config
